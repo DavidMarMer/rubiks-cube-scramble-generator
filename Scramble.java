@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class Scramble {
     /* Generates scramble */
-    public static String[] generarMezcla(byte totalMovs) {
+    public static String[] generateScramble(byte totalMovs) {
         String[] possibleMovs = {"U", "D", "L", "R", "F", "B"};
         String[] scramble = new String[totalMovs];
         byte numPossibleMovs = (byte) possibleMovs.length;
@@ -43,7 +43,7 @@ public class Scramble {
         /* Number of movements that the final scramble will have */
         final byte NUM_MOVEMENTS = 15;
 
-        String[] scramble = generarMezcla(NUM_MOVEMENTS);
+        String[] scramble = generateScramble(NUM_MOVEMENTS);
 
         /* Shows the scramble in console */
         byte i;
